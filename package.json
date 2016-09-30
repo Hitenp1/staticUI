@@ -1,0 +1,38 @@
+{
+  "name": "staticui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:production": "node index.js",
+    "start:dev": "nodemon -e html,css,js index.js",
+    "start": "npm run start:dev",
+    "build-css": "node-sass -w -r assets/stylesheets -o public/stylesheets",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hitenp1/staticUI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hitenp1/staticUI/issues"
+  },
+  "homepage": "https://github.com/Hitenp1/staticUI#readme",
+  "description": "",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "morgan": "^1.7.0",
+    "nunjucks": "^2.5.2",
+    "sequelize": "^3.24.3"
+  },
+  "devDependencies": {
+    "node-sass": "^3.10.1",
+    "nodemon": "^1.10.2",
+    "sass": "^0.5.0"
+  }
+}
